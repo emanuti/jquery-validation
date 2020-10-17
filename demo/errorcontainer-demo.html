@@ -1,39 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<title>Test for jQuery validate() plugin</title>
 	<link rel="stylesheet" media="screen" href="css/screen.css">
 	<script src="../lib/jquery.js"></script>
-	<script src="../dist/jquery.validate.js"></script>
+	<script src="../src/core.js"></script>
 	<style>
-	.cmxform fieldset p.error label {
-		color: red;
-	}
-	div.container {
-		background-color: #eee;
-		border: 1px solid red;
-		margin: 5px;
-		padding: 5px;
-	}
-	div.container ol li {
-		list-style-type: disc;
-		margin-left: 20px;
-	}
-	div.container {
-		display: none
-	}
-	.container label.error {
-		display: inline;
-	}
-	form.cmxform {
-		width: 30em;
-	}
-	form.cmxform label.error {
-		display: block;
-		margin-left: 1em;
-		width: auto;
-	}
+		.cmxform fieldset p.error label {
+			color: red;
+		}
+
+		div.container {
+			background-color: #eee;
+			border: 1px solid red;
+			margin: 5px;
+			padding: 5px;
+		}
+
+		div.container ol li {
+			list-style-type: disc;
+			margin-left: 20px;
+		}
+
+		div.container {
+			display: none
+		}
+
+		.container label.error {
+			display: inline;
+		}
+
+		form.cmxform {
+			width: 30em;
+		}
+
+		form.cmxform label.error {
+			display: block;
+			margin-left: 1em;
+			width: auto;
+		}
 	</style>
 	<script>
 	// only for demo purposes
@@ -71,11 +78,13 @@
 				<legend>Login Form</legend>
 				<p>
 					<label>Username</label>
-					<input name="user" title="Please enter your username (at least 3 characters)" required minlength="3">
+					<input name="user" title="Please enter your username (at least 3 characters)" required
+						minlength="3">
 				</p>
 				<p>
 					<label>Password</label>
-					<input type="password" maxlength="12" name="password" title="Please enter your password, between 5 and 12 characters" required minlength="5">
+					<input type="password" maxlength="12" name="password"
+						title="Please enter your password, between 5 and 12 characters" required minlength="5">
 				</p>
 				<div class="error">
 				</div>
@@ -92,7 +101,8 @@
 					<label for="email" class="error">Please enter your email address</label>
 				</li>
 				<li>
-					<label for="phone" class="error">Please enter your phone <b>number</b> (between 2 and 8 characters)</label>
+					<label for="phone" class="error">Please enter your phone <b>number</b> (between 2 and 8
+						characters)</label>
 				</li>
 				<li>
 					<label for="address" class="error">Please enter your address (at least 3 characters)</label>
@@ -135,7 +145,8 @@
 				</p>
 				<p>
 					<label for="agree">Please agree to our policy</label>
-					<input type="checkbox" class="checkbox" id="agree" title="Please agree to our policy!" name="agree" required>
+					<input type="checkbox" class="checkbox" id="agree" title="Please agree to our policy!" name="agree"
+						required>
 				</p>
 				<p>
 					<input class="submit" type="submit" value="Submit">
@@ -149,4 +160,5 @@
 		<a href="index.html">Back to main page</a>
 	</div>
 </body>
+
 </html>
